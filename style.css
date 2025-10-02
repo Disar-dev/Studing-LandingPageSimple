@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #13a4ec;
+    --color-secundary: #f6f7f8;
+    --font-main: 'maroupe', sans-serif;
+    --spacing: 1rem;
+}
+
+body {
+    background: var(--color-secundary);
+    font-family: var(--font-main);
+}
+
+main {
+    
+}
