@@ -21,13 +21,22 @@ body {
     font-family: var(--font-main);
 }
 
-main {
+
+
+.main-index {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     margin: 3rem;
 }
+
+.main-aboutMe {
+    padding: 2rem;
+    margin: 3rem;
+}
+
+
 
 .presentation:first-child {
     width: 50%;
@@ -58,20 +67,26 @@ section button {
 
 .aboutMe .underline{
     background-color: var(--color-primary);
-    height: 0.5rem;
+    height: 0.2rem;
     width: 40%;
 }
-
+.aboutMe div {
+    display: inline-block;
+}
 .aboutMe h1 {
     padding: 0;
+    font-size: 2rem;
 }
 
 p {
     color: var(--color-paragraphs);
 }
 
-.experience h2{
+.experience h2,
+.hability h2,
+.passions h2{
     border-bottom: solid 1px var(--color-underlineLight);
+    margin: 0.8rem 0;
 }
 
 .experienceItem {
@@ -84,20 +99,24 @@ p {
     color: var(--color-primary);
 }
 
-.hability h2{
-    border-bottom: solid 1px var(--color-underlineLight);
-}
 .hability ul{
     list-style: none;
     color: var(--color-primary);
-    display: f;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hability ul li {
     padding: 0.5rem 1rem;
-    margin: 1rem;
+    margin: 0.3rem;
     background-color: var(--color-underlineLight);
     border-radius: 1.5rem;
+}
+
+@media (min-width: 480px){
+    .aboutMe + section {
+        display: flex;
+    }
 }
 
 @media (max-width: 768px){
@@ -124,4 +143,7 @@ p {
         text-align: center;
     }
 
+    
+
 }
+
